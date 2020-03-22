@@ -4,7 +4,7 @@ Member: Mirvan SADIGLI
 
 Syntax 
 
- <program>::= <stmt>|<stmts>
+ <prog>::= <stmt>|<stmts>
 
  <stmts>::= <stmts> <stmt>|<stmt>
 
