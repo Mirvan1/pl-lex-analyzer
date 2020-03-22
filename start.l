@@ -75,7 +75,8 @@ print                                           {return PRINT;}
 ">"     |
 ">="    |
 "!="	|
-==				                 {return RELATIONALOP;}
+==		|
+"!"                                       {return RELATIONALOP;}
 
 \+      | 						
 -       |						
