@@ -3,10 +3,15 @@
 Member: Mirvan SADIGLI
 
 Syntax
+
 <program> ::= <stmt> | <stmts>
+
 <stmts> ::= <stmts> <stmt> | <stmt>
+
 <stmt> ::=  <nonblock_stmt> | <block_stmt> | <single_stmt>
+
 <nonblock_stmt> ::=  <types> | <expr>
+
 <types> ::= <datatypes> | <text_type>
 <datatype> ::= <int> | <float> | <boolean>
 <text_type> :: = <String> | <char>
