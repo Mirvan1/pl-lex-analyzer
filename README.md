@@ -4,82 +4,82 @@ Member: Mirvan SADIGLI
 
 Syntax
 
-<program>::= <stmt>|<stmts>
+ <program>::= <stmt>|<stmts>
 
-<stmts>::= <stmts> <stmt>|<stmt>
+ <stmts>::= <stmts> <stmt>|<stmt>
 
-<stmt>::=  <nonblock_stmt>|<block_stmt>|<single_stmt>
+ <stmt>::=  <nonblock_stmt>|<block_stmt>|<single_stmt>
 
-<nonblock_stmt>::=  <types>|<expr>
+ <nonblock_stmt>::=  <types>|<expr>
 
-<types>::= <datatypes>|<text_type>
+ <types>::= <datatypes>|<text_type>
 
-<datatype>::= <int>|<float> <boolean>
+ <datatype>::= <int>|<float> <boolean>
 
-<text_type>:: = <String>|<char>
+ <text_type>:: = <String>|<char>
 
-<expr>::= <assign_expr>
+ <expr>::= <assign_expr>
 
-<assign_expr>::= <lefthand_side> <relational_op> <assign_expr>|
-<lefthand_side> <op> <assign_expr>
-<block_stmt>:: = <conditional_stmt> | <loop_stmt> | <method_stmt>
+ <assign_expr>::= <lefthand_side> <relational_op> <assign_expr>|
+ <lefthand_side> <op> <assign_expr>
+ <block_stmt>:: = <conditional_stmt> | <loop_stmt> | <method_stmt>
 
-<conditional_stmt>::=<if_cond_exp> |<elif_cond_exp> |<else_cond_exp>
+ <conditional_stmt>::=<if_cond_exp> |<elif_cond_exp> |<else_cond_exp>
 
  <if_cond_exp>::= if (<cond_op>) <body> 
 
-<elif_cond_exp>::=elif(<cond_op) <body>
+ <elif_cond_exp>::=elif(<cond_op) <body>
 
-<else_cond_exp>::= else <body>
+ <else_cond_exp>::= else <body>
 
-<loop_stmt>::= <for_stmt> | <while_stmt> | <foreach_stmt>
+ <loop_stmt>::= <for_stmt> | <while_stmt> | <foreach_stmt>
 
-<for_stmt>::= for( <expr> ; <expr> ; <expr>)  <body>
+ <for_stmt>::= for( <expr> ; <expr> ; <expr>)  <body>
 
-<while_stmt>::= while(<expr>)  <body>
+ <while_stmt>::= while(<expr>)  <body>
 
-<foreach_stmt>::= foreach(<expr> : expr)  <body>
+ <foreach_stmt>::= foreach(<expr> : expr)  <body>
 
-<method_stmt>::=  <method_mod>  <body>
+ <method_stmt>::=  <method_mod>  <body>
 
-<method_mod>::= func( <nonblock_stmt> ) <body> | struct <body>
+ <method_mod>::= func( <nonblock_stmt> ) <body> | struct <body>
 
-<body>::= { <stmt> ? }
+ <body>::= { <stmt> ? }
 
-<single_stmt>:= <printer_stmt> | <scanner_stmt> | <comment>|
-<exit_program>
+ <single_stmt>:= <printer_stmt> | <scanner_stmt> | <comment>|
+ <exit_program>
 
-<printer_stmt>::= printer
+ <printer_stmt>::= printer
 
-<scanner_stmt>::= scanner
+ <scanner_stmt>::= scanner
 
-<comment>::= #
+ <comment>::= #
 
-<exit_program>::= end
+ <exit_program>::= end
 
-<int>::= <int> <op> <int> | <int> <relational_op> <int>? | <digit>
+ <int>::= <int> <op> <int> | <int> <relational_op> <int>? | <digit>
 
-<float>::= <float> <op> <float> | <float> <relational_op> <floatt>? | <int>.<digit>
+ <float>::= <float> <op> <float> | <float> <relational_op> <floatt>? | <int>.<digit>
 
-<boolean>::= true | false 
+ <boolean>::= true | false 
 
-<String>::=<letter> | <digit> | <symbol>
+ <String>::=<letter> | <digit> | <symbol>
 
-<char>::=<charachter>
+ <char>::=<charachter>
 
-<charachter>::=<letter> | <digit> | <symbol>
+ <charachter>::=<letter> | <digit> | <symbol>
 
-<cond_op>::=<expr> && <expr> | <expr> || <expr> 
+ <cond_op>::=<expr> && <expr> | <expr> || <expr> 
 
-<relational_op> ::= ++ |-- |< | <= | > | >= | != | ==
+ <relational_op> ::= ++ |-- |< | <= | > | >= | != | ==
 
-<symbol>::=  ' | " | , |; | = | ( | ) | { | } | [ | ]
+ <symbol>::=  ' | " | , |; | = | ( | ) | { | } | [ | ]
 
-<op>::= + | - | * | / | =
+ <op>::= + | - | * | / | =
 
-<digit> ::=0 | 1 |....| 9
+ <digit> ::=0 | 1 |....| 9
 
-<letter> ::= a | b ...| z | A | B ...| Z |
+ <letter> ::= a | b ...| z | A | B ...| Z |
 
 
 
