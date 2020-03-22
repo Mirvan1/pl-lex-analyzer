@@ -4,19 +4,19 @@ Member: Mirvan SADIGLI
 
 Syntax
 
-<program>::= <stmt> | <stmts>
+<program>::= <stmt>|<stmts>
 
-<stmts>::= <stmts> <stmt> | <stmt>
+<stmts>::= <stmts> <stmt>|<stmt>
 
-<stmt>::=  <nonblock_stmt> | <block_stmt> | <single_stmt>
+<stmt>::=  <nonblock_stmt>|<block_stmt>|<single_stmt>
 
-<nonblock_stmt>::=  <types> | <expr>
+<nonblock_stmt>::=  <types>|<expr>
 
-<types>::= <datatypes> | <text_type>
+<types>::= <datatypes>|<text_type>
 
-<datatype>::= <int> | <float> | <boolean>
+<datatype>::= <int>|<float> <boolean>
 
-<text_type>:: = <String> | <char>
+<text_type>:: = <String>|<char>
 
 <expr>::= <assign_expr>
 
