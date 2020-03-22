@@ -2,7 +2,7 @@
 
 Member: Mirvan SADIGLI
 
-Syntax
+Syntax 
 
  <program>::= <stmt>|<stmts>
 
